@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04_부트스트랩(이미지관련)</title>
+  <style>
+    img{width: 200px;}
+    .img-thumbnail{width: 200px; height: 150px;}
+  </style>
+
+      <!-- 1. css 연결 -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+      <!-- 2. js 연결 -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+  <h2>04_부트스트랩(이미지관련)</h2>
+  <img src="./img/sunseed.jpg" alt=""><br>
+
+  <br>
+
+  <h3> 1. 모서리 둥글게 :: class="rounded"</h3>
+  <img src="./img/sunseed.jpg" alt="" class="rounded"><br>
+
+  <br>
+
+  <h3> 2. 모서리 둥글게(원모양) :: class="rounded-circle"</h3>
+  <img src="./img/sunseed.jpg" alt="" class="rounded-circle"><br>
+  
+  <br>
+
+  <h3> 3. 이미지를 썸네일 이미지처럼 보이게 :: class="img-thumbnail"</h3>
+  <img src="./img/sunseed2.jpg" alt="" class="img-thumbnail">
+  <img src="./img/sunseed2.jpg" alt="" class="img-thumbnail">
+  <img src="./img/sunseed2.jpg" alt="" class="img-thumbnail">
+  <img src="./img/sunseed2.jpg" alt="" class="img-thumbnail">
+
+  <p>.img-thumbnail :: border, padding, border-radius 속성값 사용</p><br>
+  
+  <h3> 4. 이미지와 문자를 사용하여 콘텐츠 제작시 :: figcaption, figure</h3>
+  <figure>
+    <img src="./img/sunseed3.jpg" alt="" class="img-fluid">
+    <figcaption>햇시 @sunseed_neko</figcaption>
+  </figure>
+  <p>이미지를 반응형으로 동작하게 만드는 클래스 :: class="img-fluid" 적용시, width:100% / height:auto 속성이 자동으로 들어감!!</p>
+  <p>부모의 크기가 변하려면 이미지 크기도 같이 반응!</p>
+  <br>
+</body>
+</html>
